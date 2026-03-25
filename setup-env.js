@@ -28,6 +28,12 @@ const envContent = [
   "NEXT_PUBLIC_LEGAL=Casas Da Agua Materiais para Construcao LTDA",
 ].join("\n");
 
+// Skip on Vercel — env vars are set in the dashboard
+if (process.env.VERCEL) {
+  console.log("Vercel detected, skipping .env.local generation.");
+  process.exit(0);
+}
+
 const envPath = path.join(__dirname, ".env.local");
 
 if (fs.existsSync(envPath)) {
