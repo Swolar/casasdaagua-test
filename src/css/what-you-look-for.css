@@ -1,0 +1,49 @@
+.wylf {
+  @apply bg-white;
+  padding: 28px 0;
+}
+
+.wylf__container {
+  @apply mx-auto px-4;
+  max-width: 1292px;
+}
+
+.wylf__title {
+  @apply font-bold;
+  font-size: 20px;
+  color: #002A47;
+  margin-bottom: 16px;
+}
+
+.wylf__grid {
+  @apply grid grid-cols-2 gap-4;
+}
+@media (min-width: 768px) {
+  .wylf__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.wylf__card {
+  @apply relative overflow-hidden;
+  border-radius: 8px;
+  height: 120px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s;
+}
+@media (min-width: 1024px) {
+  .wylf__card {
+    height: 160px;
+  }
+}
+.wylf__card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.wylf__card-img {
+  @apply object-cover;
+  transition: transform 0.5s;
+}
+.wylf__card:hover .wylf__card-img {
+  transform: scale(1.05);
+}

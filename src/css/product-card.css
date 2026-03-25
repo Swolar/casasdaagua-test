@@ -1,0 +1,114 @@
+.pcard {
+  @apply bg-white h-full flex flex-col relative overflow-hidden;
+  border: 1px solid #E3EBED;
+  border-radius: 16px;
+  transition: all 0.3s;
+}
+.pcard:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.pcard__badge {
+  @apply absolute z-10 text-white font-bold;
+  top: 10px;
+  left: 10px;
+  background: #00875A;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  letter-spacing: 0.3px;
+  box-shadow: 0 2px 8px rgba(0, 135, 90, 0.3);
+}
+
+.pcard__img-link {
+  @apply block;
+  padding: 12px 12px 8px;
+}
+
+.pcard__img-area {
+  @apply relative w-full flex items-center justify-center overflow-hidden;
+  aspect-ratio: 1;
+  border-radius: 8px;
+}
+
+.pcard__img-inner {
+  @apply relative w-full h-full;
+  transition: transform 0.3s ease;
+}
+.pcard:hover .pcard__img-inner {
+  transform: scale(1.05);
+}
+
+.pcard__no-img {
+  @apply w-full h-full flex items-center justify-center text-sm;
+  background: #F2F6F8;
+  border-radius: 8px;
+  color: #979899;
+}
+
+.pcard__body {
+  @apply flex flex-col flex-grow;
+  padding: 0 12px 8px;
+}
+
+.pcard__name {
+  @apply font-medium mb-2 leading-snug transition-colors;
+  font-size: 13px;
+  color: #002A47;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.pcard__name:hover {
+  color: #0862AD;
+}
+
+.pcard__prices {
+  @apply mt-auto;
+}
+
+.pcard__price-from {
+  @apply line-through block;
+  font-size: 12px;
+  color: #979899;
+}
+
+.pcard__price {
+  @apply font-bold;
+  font-size: 18px;
+  color: #0862AD;
+}
+
+.pcard__installments {
+  font-size: 12px;
+  color: #979899;
+  margin-top: 2px;
+}
+
+.pcard__actions {
+  padding: 8px 12px 12px;
+}
+
+.pcard__add-btn {
+  @apply w-full text-white font-bold transition-colors;
+  background: #0862AD;
+  font-size: 12px;
+  padding: 10px 0;
+  border-radius: 8px;
+}
+.pcard__add-btn:hover {
+  background: #0f3e99;
+}
+
+.pcard__notify-btn {
+  @apply w-full font-bold transition-colors cursor-not-allowed;
+  border: 2px solid #0862AD;
+  color: #0862AD;
+  font-size: 12px;
+  padding: 10px 0;
+  border-radius: 8px;
+}
+.pcard__notify-btn:hover {
+  background: #F2F6F8;
+}

@@ -1,0 +1,70 @@
+.brands {
+  @apply bg-white overflow-hidden;
+  padding: 28px 0;
+}
+
+.brands__container {
+  @apply mx-auto px-4;
+  max-width: 1292px;
+}
+
+.brands__title {
+  @apply font-bold;
+  font-size: 20px;
+  color: #002A47;
+  margin-bottom: 16px;
+}
+
+.brands__carousel {
+  @apply relative overflow-hidden;
+}
+
+.brands__scroll-btn {
+  @apply absolute top-1/2 -translate-y-1/2 z-10 flex items-center justify-center text-white shadow-lg transition-all;
+  width: 32px;
+  height: 32px;
+  background: #0862AD;
+  border-radius: 4px;
+  opacity: 0;
+}
+.brands__carousel:hover .brands__scroll-btn {
+  opacity: 1;
+}
+.brands__scroll-btn:hover {
+  background: #0f3e99;
+}
+.brands__scroll-btn--left {
+  left: 0;
+}
+.brands__scroll-btn--right {
+  right: 0;
+}
+
+.brands__track {
+  @apply flex items-center gap-4 overflow-x-auto pb-2 px-1;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.brands__track::-webkit-scrollbar {
+  display: none;
+}
+
+.brands__card {
+  @apply flex-shrink-0 flex items-center justify-center cursor-pointer;
+  border: 1px solid #E3EBED;
+  border-radius: 8px;
+  padding: 12px 24px;
+  height: 50px;
+  min-width: 130px;
+  transition: all 0.3s;
+}
+.brands__card:hover {
+  border-color: #0862AD;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.brands__name {
+  @apply font-bold whitespace-nowrap;
+  font-size: 12px;
+  color: #002A47;
+}

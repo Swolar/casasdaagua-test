@@ -1,0 +1,79 @@
+.shelf {
+  @apply bg-white;
+  padding: 28px 0;
+}
+
+.shelf__container {
+  @apply mx-auto px-4;
+  max-width: 1292px;
+}
+
+.shelf__header {
+  @apply flex items-center justify-between;
+  margin-bottom: 16px;
+}
+
+.shelf__title {
+  @apply font-bold;
+  font-size: 20px;
+  color: #002A47;
+}
+
+.shelf__view-more {
+  @apply text-sm underline font-semibold;
+  color: #0862AD;
+}
+.shelf__view-more:hover {
+  color: #0f3e99;
+}
+
+.shelf__carousel {
+  @apply relative overflow-hidden;
+}
+
+.shelf__scroll-btn {
+  @apply absolute top-1/2 -translate-y-1/2 z-10 flex items-center justify-center text-white shadow-lg transition-all;
+  width: 32px;
+  height: 32px;
+  background: #0862AD;
+  border-radius: 4px;
+  opacity: 0;
+}
+.shelf__carousel:hover .shelf__scroll-btn {
+  opacity: 1;
+}
+.shelf__scroll-btn:hover {
+  background: #0f3e99;
+}
+.shelf__scroll-btn--left {
+  left: 0;
+}
+.shelf__scroll-btn--right {
+  right: 0;
+}
+
+.shelf__track {
+  @apply flex gap-4 overflow-x-auto pb-2;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.shelf__track::-webkit-scrollbar {
+  display: none;
+}
+
+.shelf__card-wrap {
+  @apply flex-shrink-0;
+  scroll-snap-align: start;
+  width: 180px;
+}
+@media (min-width: 640px) {
+  .shelf__card-wrap {
+    width: 210px;
+  }
+}
+@media (min-width: 1024px) {
+  .shelf__card-wrap {
+    width: 240px;
+  }
+}

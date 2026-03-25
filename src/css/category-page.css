@@ -1,0 +1,241 @@
+/* Category Page */
+.catpage {
+  @apply min-h-screen;
+  background: #F2F6F8;
+}
+
+.catpage__breadcrumb {
+  @apply mx-auto px-4 py-4;
+  max-width: 1292px;
+}
+
+.catpage__breadcrumb-nav {
+  @apply flex items-center gap-2 text-sm;
+  color: #979899;
+}
+
+.catpage__breadcrumb-link:hover {
+  color: #0862AD;
+}
+
+.catpage__breadcrumb-current {
+  @apply font-medium;
+  color: #002A47;
+}
+
+.catpage__container {
+  @apply mx-auto px-4;
+  max-width: 1292px;
+  padding-bottom: 48px;
+}
+
+.catpage__header {
+  @apply flex items-center justify-between;
+  margin-bottom: 24px;
+}
+
+.catpage__title {
+  @apply font-bold;
+  font-size: 30px;
+  color: #002A47;
+}
+
+.catpage__count {
+  @apply text-sm;
+  color: #979899;
+  margin-top: 4px;
+}
+
+.catpage__controls {
+  @apply flex items-center gap-3;
+}
+
+.catpage__filter-btn {
+  @apply flex items-center gap-2 text-sm font-medium bg-white;
+  display: flex;
+  padding: 8px 16px;
+  border: 1px solid #E3EBED;
+  border-radius: 8px;
+  color: #002A47;
+}
+@media (min-width: 1024px) {
+  .catpage__filter-btn {
+    display: none;
+  }
+}
+
+.catpage__sort-select {
+  @apply text-sm bg-white outline-none;
+  padding: 8px 40px 8px 16px;
+  border: 1px solid #E3EBED;
+  border-radius: 8px;
+  color: #002A47;
+}
+
+.catpage__layout {
+  @apply flex;
+  gap: 24px;
+}
+
+/* Sidebar */
+.catpage__sidebar {
+  display: none;
+  flex-shrink: 0;
+  width: 260px;
+}
+@media (min-width: 1024px) {
+  .catpage__sidebar {
+    @apply block relative;
+  }
+}
+
+.catpage__sidebar--mobile-open {
+  @apply fixed inset-0 z-50 bg-white p-6 overflow-y-auto block;
+}
+
+.catpage__sidebar-mobile-header {
+  @apply flex items-center justify-between mb-6;
+  display: none;
+}
+.catpage__sidebar--mobile-open .catpage__sidebar-mobile-header {
+  display: flex;
+}
+@media (min-width: 1024px) {
+  .catpage__sidebar-mobile-header {
+    display: none !important;
+  }
+}
+
+.catpage__sidebar-mobile-title {
+  @apply text-lg font-bold;
+  color: #002A47;
+}
+
+.catpage__filters {
+  @apply bg-white space-y-6;
+  border: 1px solid #E3EBED;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.catpage__filter-title {
+  @apply text-sm font-bold mb-3;
+  color: #002A47;
+}
+
+.catpage__filter-list {
+  @apply space-y-2 overflow-y-auto;
+  max-height: 300px;
+}
+
+.catpage__filter-list--brands {
+  max-height: 250px;
+}
+
+.catpage__cat-link {
+  @apply text-sm block;
+  padding: 2px 0;
+  color: #002A47;
+}
+.catpage__cat-link:hover {
+  color: #0862AD;
+}
+
+.catpage__cat-link--active {
+  color: #0862AD;
+  font-weight: 600;
+}
+
+.catpage__cat-count {
+  color: #979899;
+}
+
+.catpage__brand-label {
+  @apply flex items-center gap-2 cursor-pointer;
+}
+
+.catpage__brand-checkbox {
+  @apply rounded;
+  width: 16px;
+  height: 16px;
+  border-color: #E3EBED;
+  color: #0862AD;
+}
+
+.catpage__brand-name {
+  @apply text-sm;
+  color: #002A47;
+}
+
+.catpage__price-row {
+  @apply flex items-center gap-2;
+}
+
+.catpage__price-input {
+  @apply w-full text-sm outline-none;
+  padding: 8px 12px;
+  border: 1px solid #E3EBED;
+  border-radius: 8px;
+}
+
+.catpage__price-separator {
+  color: #979899;
+}
+
+.catpage__clear-btn {
+  @apply w-full text-sm font-semibold;
+  padding: 8px 0;
+  color: #F71963;
+}
+.catpage__clear-btn:hover {
+  text-decoration: underline;
+}
+
+/* Product grid */
+.catpage__products {
+  @apply flex-1;
+}
+
+.catpage__grid {
+  @apply grid gap-4;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 768px) {
+  .catpage__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1280px) {
+  .catpage__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.catpage__empty {
+  @apply bg-white text-center;
+  border: 1px solid #E3EBED;
+  border-radius: 12px;
+  padding: 48px;
+}
+
+.catpage__empty-text {
+  @apply text-lg;
+  color: #979899;
+}
+
+.catpage__load-more {
+  @apply text-center;
+  margin-top: 32px;
+}
+
+.catpage__load-btn {
+  @apply text-sm font-semibold transition-colors;
+  padding: 12px 32px;
+  border: 2px solid #0862AD;
+  color: #0862AD;
+  border-radius: 8px;
+}
+.catpage__load-btn:hover {
+  background: #0862AD;
+  color: #fff;
+}

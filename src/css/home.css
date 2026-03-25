@@ -1,0 +1,47 @@
+.home__separator {
+  height: 8px;
+  background: #F2F6F8;
+}
+
+.home__special-section {
+  @apply bg-white;
+  padding: 28px 0;
+}
+
+.home__special-container {
+  @apply mx-auto px-4;
+  max-width: 1292px;
+}
+
+.home__special-header {
+  @apply flex items-center justify-between;
+  margin-bottom: 16px;
+}
+
+.home__special-title {
+  @apply font-bold;
+  font-size: 20px;
+  color: #002A47;
+}
+
+.home__special-link {
+  @apply text-sm underline font-semibold;
+  color: #0862AD;
+}
+.home__special-link:hover {
+  color: #0f3e99;
+}
+
+.home__special-banner {
+  @apply block relative overflow-hidden;
+  border-radius: 12px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s;
+}
+.home__special-banner:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.home__special-img {
+  @apply w-full h-auto object-cover;
+}

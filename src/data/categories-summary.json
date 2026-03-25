@@ -1,0 +1,16 @@
+[
+  { "name": "Materiais Hidráulicos", "slug": "materiais-hidraulicos", "count": 1500 },
+  { "name": "Banheiro", "slug": "banheiro", "count": 855 },
+  { "name": "Pisos e Revestimentos", "slug": "pisos-e-revestimentos", "count": 788 },
+  { "name": "Materiais para Construção", "slug": "materiais-para-construcao", "count": 738 },
+  { "name": "Materiais Elétricos", "slug": "materiais-eletricos", "count": 595 },
+  { "name": "Ferragens", "slug": "ferragens", "count": 594 },
+  { "name": "Ferramentas", "slug": "ferramentas", "count": 538 },
+  { "name": "Tintas e Acessórios para Pintura", "slug": "tintas-e-acessorios-para-pintura", "count": 422 },
+  { "name": "Cozinha e Lavanderia", "slug": "cozinha-e-lavanderia", "count": 315 },
+  { "name": "Eletrodomésticos", "slug": "eletrodomesticos", "count": 248 },
+  { "name": "Climatização e Ventilação", "slug": "climatizacao-e-ventilacao", "count": 133 },
+  { "name": "Iluminação", "slug": "iluminacao", "count": 130 },
+  { "name": "Casa e Jardim", "slug": "casa-e-jardim", "count": 117 },
+  { "name": "Eletroportáteis", "slug": "eletroportateis", "count": 57 }
+]

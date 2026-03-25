@@ -1,0 +1,32 @@
+.benefits {
+  @apply bg-white border-b border-[#E3EBED];
+}
+
+.benefits__container {
+  @apply mx-auto px-4;
+  max-width: 1292px;
+}
+
+.benefits__list {
+  @apply flex items-center justify-between py-3 overflow-x-auto;
+  gap: 32px;
+  scrollbar-width: none;
+}
+.benefits__list::-webkit-scrollbar {
+  display: none;
+}
+
+.benefits__item {
+  @apply flex items-center gap-3 whitespace-nowrap flex-shrink-0;
+}
+
+.benefits__icon {
+  width: 32px;
+  height: 32px;
+}
+
+.benefits__text {
+  @apply font-semibold;
+  font-size: 14px;
+  color: #002A47;
+}

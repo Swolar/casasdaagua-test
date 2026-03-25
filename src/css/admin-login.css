@@ -1,0 +1,195 @@
+/* ============================================
+   Admin Login Page
+   ============================================ */
+
+@keyframes loginCardAppear {
+  from { opacity: 0; transform: translateY(30px) scale(0.96); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes loginLogoFade {
+  from { opacity: 0; transform: scale(0.8); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes loginShake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-4px); }
+  20%, 40%, 60%, 80% { transform: translateX(4px); }
+}
+
+@keyframes loginBgShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.admin-login {
+  @apply flex items-center justify-center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #F2F6F8 0%, #E3EBED 50%, #F2F6F8 100%);
+  background-size: 200% 200%;
+  animation: loginBgShift 8s ease infinite;
+  font-family: 'Bai Jamjuree', sans-serif;
+  padding: 20px;
+}
+
+.admin-login__card {
+  @apply text-center;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 24px rgba(0, 42, 71, 0.08);
+  animation: loginCardAppear 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 0.3s ease;
+}
+
+.admin-login__card:hover {
+  box-shadow: 0 8px 32px rgba(0, 42, 71, 0.12);
+}
+
+/* Logo */
+.admin-login__logo {
+  margin-bottom: 32px;
+  animation: loginLogoFade 0.8s ease-out 0.2s both;
+}
+
+.admin-login__logo-text {
+  @apply font-bold;
+  font-size: 24px;
+  color: #002A47;
+}
+
+.admin-login__logo-sub {
+  font-size: 14px;
+  color: #979899;
+  margin-top: 4px;
+}
+
+/* Heading */
+.admin-login__title {
+  @apply font-bold;
+  font-size: 20px;
+  color: #002A47;
+  margin-bottom: 8px;
+}
+
+.admin-login__subtitle {
+  font-size: 14px;
+  color: #979899;
+  margin-bottom: 24px;
+}
+
+/* Form elements */
+.admin-login__field {
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.admin-login__label {
+  @apply font-medium;
+  display: block;
+  font-size: 14px;
+  color: #002A47;
+  margin-bottom: 6px;
+}
+
+.admin-login__input {
+  @apply w-full outline-none;
+  border: 1px solid #E3EBED;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #002A47;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.admin-login__input::placeholder {
+  color: #979899;
+}
+
+.admin-login__input:focus {
+  border-color: #0862AD;
+  box-shadow: 0 0 0 3px rgba(8, 98, 173, 0.15);
+  transform: translateY(-1px);
+}
+
+/* Button */
+.admin-login__btn {
+  @apply w-full font-bold;
+  background-color: #0862AD;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 16px;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: 'Bai Jamjuree', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.admin-login__btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease, height 0.4s ease;
+}
+
+.admin-login__btn:active::after {
+  width: 400px;
+  height: 400px;
+}
+
+.admin-login__btn:hover {
+  background-color: #0f3e99;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(8, 98, 173, 0.35);
+}
+
+.admin-login__btn:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.admin-login__btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Error message */
+.admin-login__error {
+  font-size: 14px;
+  color: #F71963;
+  margin-top: 12px;
+  animation: loginShake 0.5s ease-out;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .admin-login {
+    animation: none;
+    background-size: 100% 100%;
+  }
+  .admin-login__card,
+  .admin-login__logo,
+  .admin-login__error {
+    animation: none !important;
+  }
+  .admin-login__btn,
+  .admin-login__input {
+    transition-duration: 0.01ms !important;
+  }
+}

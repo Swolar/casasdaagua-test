@@ -1,0 +1,45 @@
+.topbar {
+  @apply w-full relative;
+  background-color: #1F67B1;
+  height: 35px;
+}
+
+.topbar__inner {
+  @apply flex items-center justify-center h-full px-10;
+}
+
+.topbar__nav-btn {
+  @apply absolute top-1/2 -translate-y-1/2 transition-colors;
+  color: rgba(255, 255, 255, 0.5);
+}
+.topbar__nav-btn:hover {
+  color: #fff;
+}
+.topbar__nav-btn--left {
+  @apply left-3;
+}
+.topbar__nav-btn--right {
+  @apply right-3;
+}
+
+.topbar__text {
+  @apply text-sm font-bold italic text-center leading-none;
+}
+@media (min-width: 640px) {
+  .topbar__text {
+    font-size: 17px;
+  }
+}
+@media (min-width: 1024px) {
+  .topbar__text {
+    font-size: 21px;
+  }
+}
+
+.topbar__highlight {
+  color: #fff;
+}
+
+.topbar__highlight--yellow {
+  color: #ffd41d;
+}

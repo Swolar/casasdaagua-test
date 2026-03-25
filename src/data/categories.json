@@ -1,0 +1,1066 @@
+[
+  {
+    "id": 1,
+    "name": "Pisos e Revestimentos",
+    "url": "https://www.casasdaagua.com.br/pisos-e-revestimentos",
+    "hasChildren": true,
+    "parent": ""
+  },
+  {
+    "id": 6,
+    "name": "Revestimentos Cerâmicos",
+    "url": "https://www.casasdaagua.com.br/pisos-e-revestimentos/revestimentos-ceramicos",
+    "hasChildren": false,
+    "parent": "Pisos e Revestimentos"
+  },
+  {
+    "id": 13,
+    "name": "Rodapés, Rodateto e Rodameio",
+    "url": "https://www.casasdaagua.com.br/pisos-e-revestimentos/rodapes-rodateto-e-rodameio",
+    "hasChildren": false,
+    "parent": "Pisos e Revestimentos"
+  },
+  {
+    "id": 30,
+    "name": "Pisos Cerâmicos",
+    "url": "https://www.casasdaagua.com.br/pisos-e-revestimentos/pisos-ceramicos",
+    "hasChildren": false,
+    "parent": "Pisos e Revestimentos"
+  },
+  {
+    "id": 43,
+    "name": "Porcelanatos",
+    "url": "https://www.casasdaagua.com.br/pisos-e-revestimentos/porcelanatos",
+    "hasChildren": false,
+    "parent": "Pisos e Revestimentos"
+  },
+  {
+    "id": 63,
+    "name": "Acessórios para Colocação de Pisos e Revestimentos",
+    "url": "https://www.casasdaagua.com.br/pisos-e-revestimentos/acessorios-para-colocacao-de-pisos-e-revestimentos",
+    "hasChildren": false,
+    "parent": "Pisos e Revestimentos"
+  },
+  {
+    "id": 104,
+    "name": "Pisos Vinílicos",
+    "url": "https://www.casasdaagua.com.br/pisos-e-revestimentos/pisos-vinilicos",
+    "hasChildren": false,
+    "parent": "Pisos e Revestimentos"
+  },
+  {
+    "id": 2,
+    "name": "Banheiro",
+    "url": "https://www.casasdaagua.com.br/banheiro",
+    "hasChildren": true,
+    "parent": ""
+  },
+  {
+    "id": 4,
+    "name": "Torneiras e Misturadores para Banheiro",
+    "url": "https://www.casasdaagua.com.br/banheiro/torneiras-e-misturadores-para-banheiro",
+    "hasChildren": false,
+    "parent": "Banheiro"
+  },
+  {
+    "id": 14,
+    "name": "Assentos Sanitários",
+    "url": "https://www.casasdaagua.com.br/banheiro/assentos-sanitarios",
+    "hasChildren": false,
+    "parent": "Banheiro"
+  },
+  {
+    "id": 20,
+    "name": "Vasos Sanitários",
+    "url": "https://www.casasdaagua.com.br/banheiro/vasos-sanitarios",
+    "hasChildren": false,
+    "parent": "Banheiro"
+  },
+  {
+    "id": 28,
+    "name": "Pias e Cubas para Banheiro",
+    "url": "https://www.casasdaagua.com.br/banheiro/pias-e-cubas-para-banheiro",
+    "hasChildren": false,
+    "parent": "Banheiro"
+  },
+  {
+    "id": 40,
+    "name": "Móveis para Banheiro",
+    "url": "https://www.casasdaagua.com.br/banheiro/moveis-para-banheiro",
+    "hasChildren": false,
+    "parent": "Banheiro"
+  },
+  {
+    "id": 41,
+    "name": "Banheiro Comercial",
+    "url": "https://www.casasdaagua.com.br/banheiro/banheiro-comercial",
+    "hasChildren": false,
+    "parent": "Banheiro"
+  },
+  {
+    "id": 65,
+    "name": "Chuveiros e Duchas",
+    "url": "https://www.casasdaagua.com.br/banheiro/chuveiros-e-duchas",
+    "hasChildren": false,
+    "parent": "Banheiro"
+  },
+  {
+    "id": 71,
+    "name": "Acessórios para Banheiro",
+    "url": "https://www.casasdaagua.com.br/banheiro/acessorios-para-banheiro",
+    "hasChildren": false,
+    "parent": "Banheiro"
+  },
+  {
+    "id": 74,
+    "name": "Barras de Apoio",
+    "url": "https://www.casasdaagua.com.br/banheiro/barras-de-apoio",
+    "hasChildren": false,
+    "parent": "Banheiro"
+  },
+  {
+    "id": 156,
+    "name": "Banheiras e SPAs",
+    "url": "https://www.casasdaagua.com.br/banheiro/banheiras-e-spas",
+    "hasChildren": false,
+    "parent": "Banheiro"
+  },
+  {
+    "id": 3,
+    "name": "Eletrodomésticos",
+    "url": "https://www.casasdaagua.com.br/eletrodomesticos",
+    "hasChildren": true,
+    "parent": ""
+  },
+  {
+    "id": 8,
+    "name": "Cervejeiras, Adegas e Frigobares",
+    "url": "https://www.casasdaagua.com.br/eletrodomesticos/cervejeiras-adegas-e-frigobares",
+    "hasChildren": false,
+    "parent": "Eletrodomésticos"
+  },
+  {
+    "id": 12,
+    "name": "Coifas e Depuradores de Ar",
+    "url": "https://www.casasdaagua.com.br/eletrodomesticos/coifas-e-depuradores-de-ar",
+    "hasChildren": false,
+    "parent": "Eletrodomésticos"
+  },
+  {
+    "id": 15,
+    "name": "Fogões e Cooktops",
+    "url": "https://www.casasdaagua.com.br/eletrodomesticos/fogoes-e-cooktops",
+    "hasChildren": false,
+    "parent": "Eletrodomésticos"
+  },
+  {
+    "id": 29,
+    "name": "Fornos Elétricos e Microondas",
+    "url": "https://www.casasdaagua.com.br/eletrodomesticos/fornos-eletricos-e-microondas",
+    "hasChildren": false,
+    "parent": "Eletrodomésticos"
+  },
+  {
+    "id": 35,
+    "name": "Refrigeradores e Freezers",
+    "url": "https://www.casasdaagua.com.br/eletrodomesticos/refrigeradores-e-freezers",
+    "hasChildren": false,
+    "parent": "Eletrodomésticos"
+  },
+  {
+    "id": 42,
+    "name": "Lavadoras e Secadoras de Roupas",
+    "url": "https://www.casasdaagua.com.br/eletrodomesticos/lavadoras-e-secadoras-de-roupas",
+    "hasChildren": false,
+    "parent": "Eletrodomésticos"
+  },
+  {
+    "id": 48,
+    "name": "Lava-Louças",
+    "url": "https://www.casasdaagua.com.br/eletrodomesticos/lava-loucas",
+    "hasChildren": false,
+    "parent": "Eletrodomésticos"
+  },
+  {
+    "id": 5,
+    "name": "Materiais Hidráulicos",
+    "url": "https://www.casasdaagua.com.br/materiais-hidraulicos",
+    "hasChildren": true,
+    "parent": ""
+  },
+  {
+    "id": 9,
+    "name": "Tubos e Conexões para Água Quente",
+    "url": "https://www.casasdaagua.com.br/materiais-hidraulicos/tubos-e-conexoes-para-agua-quente",
+    "hasChildren": false,
+    "parent": "Materiais Hidráulicos"
+  },
+  {
+    "id": 23,
+    "name": "Produtos para Instalações Hidráulicas",
+    "url": "https://www.casasdaagua.com.br/materiais-hidraulicos/produtos-para-instalacoes-hidraulicas",
+    "hasChildren": false,
+    "parent": "Materiais Hidráulicos"
+  },
+  {
+    "id": 25,
+    "name": "Tubos e Conexões para Esgoto",
+    "url": "https://www.casasdaagua.com.br/materiais-hidraulicos/tubos-e-conexoes-para-esgoto",
+    "hasChildren": false,
+    "parent": "Materiais Hidráulicos"
+  },
+  {
+    "id": 26,
+    "name": "Registros, Válvulas e Acabamentos",
+    "url": "https://www.casasdaagua.com.br/materiais-hidraulicos/registros-valvulas-e-acabamentos",
+    "hasChildren": false,
+    "parent": "Materiais Hidráulicos"
+  },
+  {
+    "id": 33,
+    "name": "Tubos e Conexões Galvanizadas",
+    "url": "https://www.casasdaagua.com.br/materiais-hidraulicos/tubos-e-conexoes-galvanizadas",
+    "hasChildren": false,
+    "parent": "Materiais Hidráulicos"
+  },
+  {
+    "id": 36,
+    "name": "Calhas e Acessórios",
+    "url": "https://www.casasdaagua.com.br/materiais-hidraulicos/calhas-e-acessorios",
+    "hasChildren": false,
+    "parent": "Materiais Hidráulicos"
+  },
+  {
+    "id": 47,
+    "name": "Tubos e Conexões para Água Fria",
+    "url": "https://www.casasdaagua.com.br/materiais-hidraulicos/tubos-e-conexoes-para-agua-fria",
+    "hasChildren": false,
+    "parent": "Materiais Hidráulicos"
+  },
+  {
+    "id": 79,
+    "name": "Motobombas e Pressurizadores",
+    "url": "https://www.casasdaagua.com.br/materiais-hidraulicos/motobombas-e-pressurizadores",
+    "hasChildren": false,
+    "parent": "Materiais Hidráulicos"
+  },
+  {
+    "id": 97,
+    "name": "Aquecedores de Água",
+    "url": "https://www.casasdaagua.com.br/materiais-hidraulicos/aquecedores-de-agua",
+    "hasChildren": false,
+    "parent": "Materiais Hidráulicos"
+  },
+  {
+    "id": 145,
+    "name": "Hidrômetros e Acessórios",
+    "url": "https://www.casasdaagua.com.br/materiais-hidraulicos/hidrometros-e-acessorios",
+    "hasChildren": false,
+    "parent": "Materiais Hidráulicos"
+  },
+  {
+    "id": 150,
+    "name": "Tubos e Conexões para Dreno",
+    "url": "https://www.casasdaagua.com.br/materiais-hidraulicos/tubos-e-conexoes-para-dreno",
+    "hasChildren": false,
+    "parent": "Materiais Hidráulicos"
+  },
+  {
+    "id": 10,
+    "name": "Eletroportáteis",
+    "url": "https://www.casasdaagua.com.br/eletroportateis",
+    "hasChildren": true,
+    "parent": ""
+  },
+  {
+    "id": 11,
+    "name": "Bebedouros e Purificadores",
+    "url": "https://www.casasdaagua.com.br/eletroportateis/bebedouros-e-purificadores",
+    "hasChildren": false,
+    "parent": "Eletroportáteis"
+  },
+  {
+    "id": 66,
+    "name": "Aspiradores de Pó",
+    "url": "https://www.casasdaagua.com.br/eletroportateis/aspiradores-de-po",
+    "hasChildren": false,
+    "parent": "Eletroportáteis"
+  },
+  {
+    "id": 67,
+    "name": "Panelas Elétricas e Fritadeiras",
+    "url": "https://www.casasdaagua.com.br/eletroportateis/panelas-eletricas-e-fritadeiras",
+    "hasChildren": false,
+    "parent": "Eletroportáteis"
+  },
+  {
+    "id": 96,
+    "name": "Televisores",
+    "url": "https://www.casasdaagua.com.br/eletroportateis/televisores",
+    "hasChildren": false,
+    "parent": "Eletroportáteis"
+  },
+  {
+    "id": 113,
+    "name": "Telefonia",
+    "url": "https://www.casasdaagua.com.br/eletroportateis/telefonia",
+    "hasChildren": false,
+    "parent": "Eletroportáteis"
+  },
+  {
+    "id": 116,
+    "name": "Ferros de Passar",
+    "url": "https://www.casasdaagua.com.br/eletroportateis/ferros-de-passar",
+    "hasChildren": false,
+    "parent": "Eletroportáteis"
+  },
+  {
+    "id": 117,
+    "name": "Grills, Torradeiras e Máquina de Waffle",
+    "url": "https://www.casasdaagua.com.br/eletroportateis/grills-torradeiras-e-maquina-de-waffle",
+    "hasChildren": false,
+    "parent": "Eletroportáteis"
+  },
+  {
+    "id": 118,
+    "name": "Cafeteiras e Chaleiras Elétricas",
+    "url": "https://www.casasdaagua.com.br/eletroportateis/cafeteiras-e-chaleiras-eletricas",
+    "hasChildren": false,
+    "parent": "Eletroportáteis"
+  },
+  {
+    "id": 119,
+    "name": "Liquidificadores",
+    "url": "https://www.casasdaagua.com.br/eletroportateis/liquidificadores",
+    "hasChildren": false,
+    "parent": "Eletroportáteis"
+  },
+  {
+    "id": 120,
+    "name": "Espremedores e Extratores de Frutas",
+    "url": "https://www.casasdaagua.com.br/eletroportateis/espremedores-e-extratores-de-frutas",
+    "hasChildren": false,
+    "parent": "Eletroportáteis"
+  },
+  {
+    "id": 123,
+    "name": "Modems, Roteadores e Equipamentos Wi-fi",
+    "url": "https://www.casasdaagua.com.br/eletroportateis/modems-roteadores-e-equipamentos-wi-fi",
+    "hasChildren": false,
+    "parent": "Eletroportáteis"
+  },
+  {
+    "id": 128,
+    "name": "Câmeras de Segurança",
+    "url": "https://www.casasdaagua.com.br/eletroportateis/cameras-de-seguranca",
+    "hasChildren": false,
+    "parent": "Eletroportáteis"
+  },
+  {
+    "id": 16,
+    "name": "Cozinha e Lavanderia",
+    "url": "https://www.casasdaagua.com.br/cozinha-e-lavanderia",
+    "hasChildren": true,
+    "parent": ""
+  },
+  {
+    "id": 17,
+    "name": "Torneiras para Lavanderia",
+    "url": "https://www.casasdaagua.com.br/cozinha-e-lavanderia/torneiras-para-lavanderia",
+    "hasChildren": false,
+    "parent": "Cozinha e Lavanderia"
+  },
+  {
+    "id": 37,
+    "name": "Tanques e Móveis para Lavanderia",
+    "url": "https://www.casasdaagua.com.br/cozinha-e-lavanderia/tanques-e-moveis-para-lavanderia",
+    "hasChildren": false,
+    "parent": "Cozinha e Lavanderia"
+  },
+  {
+    "id": 75,
+    "name": "Torneiras e Misturadores para Cozinha",
+    "url": "https://www.casasdaagua.com.br/cozinha-e-lavanderia/torneiras-e-misturadores-para-cozinha",
+    "hasChildren": false,
+    "parent": "Cozinha e Lavanderia"
+  },
+  {
+    "id": 83,
+    "name": "Limpeza da Casa",
+    "url": "https://www.casasdaagua.com.br/cozinha-e-lavanderia/limpeza-da-casa",
+    "hasChildren": false,
+    "parent": "Cozinha e Lavanderia"
+  },
+  {
+    "id": 90,
+    "name": "Filtros de Água e Acessórios",
+    "url": "https://www.casasdaagua.com.br/cozinha-e-lavanderia/filtros-de-agua-e-acessorios",
+    "hasChildren": false,
+    "parent": "Cozinha e Lavanderia"
+  },
+  {
+    "id": 92,
+    "name": "Torneiras Elétricas",
+    "url": "https://www.casasdaagua.com.br/cozinha-e-lavanderia/torneiras-eletricas",
+    "hasChildren": false,
+    "parent": "Cozinha e Lavanderia"
+  },
+  {
+    "id": 99,
+    "name": "Pias e Cubas para Cozinha",
+    "url": "https://www.casasdaagua.com.br/cozinha-e-lavanderia/pias-e-cubas-para-cozinha",
+    "hasChildren": false,
+    "parent": "Cozinha e Lavanderia"
+  },
+  {
+    "id": 130,
+    "name": "Móveis para Cozinha",
+    "url": "https://www.casasdaagua.com.br/cozinha-e-lavanderia/moveis-para-cozinha",
+    "hasChildren": false,
+    "parent": "Cozinha e Lavanderia"
+  },
+  {
+    "id": 131,
+    "name": "Acessórios para Cozinha",
+    "url": "https://www.casasdaagua.com.br/cozinha-e-lavanderia/acessorios-para-cozinha",
+    "hasChildren": false,
+    "parent": "Cozinha e Lavanderia"
+  },
+  {
+    "id": 133,
+    "name": "Acessórios para Lavanderia",
+    "url": "https://www.casasdaagua.com.br/cozinha-e-lavanderia/acessorios-para-lavanderia",
+    "hasChildren": false,
+    "parent": "Cozinha e Lavanderia"
+  },
+  {
+    "id": 134,
+    "name": "Lixeiras para Cozinha e Lavanderia",
+    "url": "https://www.casasdaagua.com.br/cozinha-e-lavanderia/lixeiras-para-cozinha-e-lavanderia",
+    "hasChildren": false,
+    "parent": "Cozinha e Lavanderia"
+  },
+  {
+    "id": 18,
+    "name": "Materiais Elétricos",
+    "url": "https://www.casasdaagua.com.br/materiais-eletricos",
+    "hasChildren": true,
+    "parent": ""
+  },
+  {
+    "id": 19,
+    "name": "Cabos e Fios Elétricos",
+    "url": "https://www.casasdaagua.com.br/materiais-eletricos/cabos-e-fios-eletricos",
+    "hasChildren": false,
+    "parent": "Materiais Elétricos"
+  },
+  {
+    "id": 21,
+    "name": "Acessórios Elétricos",
+    "url": "https://www.casasdaagua.com.br/materiais-eletricos/acessorios-eletricos",
+    "hasChildren": false,
+    "parent": "Materiais Elétricos"
+  },
+  {
+    "id": 22,
+    "name": "Quadros e Caixas Elétricas",
+    "url": "https://www.casasdaagua.com.br/materiais-eletricos/quadros-e-caixas-eletricas",
+    "hasChildren": false,
+    "parent": "Materiais Elétricos"
+  },
+  {
+    "id": 24,
+    "name": "Resistências Elétricas",
+    "url": "https://www.casasdaagua.com.br/materiais-eletricos/resistencias-eletricas",
+    "hasChildren": false,
+    "parent": "Materiais Elétricos"
+  },
+  {
+    "id": 27,
+    "name": "Tomadas e Interruptores",
+    "url": "https://www.casasdaagua.com.br/materiais-eletricos/tomadas-e-interruptores",
+    "hasChildren": false,
+    "parent": "Materiais Elétricos"
+  },
+  {
+    "id": 61,
+    "name": "Disjuntores",
+    "url": "https://www.casasdaagua.com.br/materiais-eletricos/disjuntores",
+    "hasChildren": false,
+    "parent": "Materiais Elétricos"
+  },
+  {
+    "id": 100,
+    "name": "Canaletas e Acessórios",
+    "url": "https://www.casasdaagua.com.br/materiais-eletricos/canaletas-e-acessorios",
+    "hasChildren": false,
+    "parent": "Materiais Elétricos"
+  },
+  {
+    "id": 101,
+    "name": "Dutos e Eletrodutos",
+    "url": "https://www.casasdaagua.com.br/materiais-eletricos/dutos-e-eletrodutos",
+    "hasChildren": false,
+    "parent": "Materiais Elétricos"
+  },
+  {
+    "id": 31,
+    "name": "Iluminação",
+    "url": "https://www.casasdaagua.com.br/iluminacao",
+    "hasChildren": true,
+    "parent": ""
+  },
+  {
+    "id": 32,
+    "name": "Arandelas",
+    "url": "https://www.casasdaagua.com.br/iluminacao/arandelas",
+    "hasChildren": false,
+    "parent": "Iluminação"
+  },
+  {
+    "id": 34,
+    "name": "Lâmpadas",
+    "url": "https://www.casasdaagua.com.br/iluminacao/lampadas",
+    "hasChildren": false,
+    "parent": "Iluminação"
+  },
+  {
+    "id": 44,
+    "name": "Lustres e Pendentes",
+    "url": "https://www.casasdaagua.com.br/iluminacao/lustres-e-pendentes",
+    "hasChildren": false,
+    "parent": "Iluminação"
+  },
+  {
+    "id": 45,
+    "name": "Iluminação Externa",
+    "url": "https://www.casasdaagua.com.br/iluminacao/iluminacao-externa",
+    "hasChildren": false,
+    "parent": "Iluminação"
+  },
+  {
+    "id": 51,
+    "name": "Plafons e Painéis",
+    "url": "https://www.casasdaagua.com.br/iluminacao/plafons-e-paineis",
+    "hasChildren": false,
+    "parent": "Iluminação"
+  },
+  {
+    "id": 53,
+    "name": "Spots e Trilhos",
+    "url": "https://www.casasdaagua.com.br/iluminacao/spots-e-trilhos",
+    "hasChildren": false,
+    "parent": "Iluminação"
+  },
+  {
+    "id": 112,
+    "name": "Sensores de Presença",
+    "url": "https://www.casasdaagua.com.br/iluminacao/sensores-de-presenca",
+    "hasChildren": false,
+    "parent": "Iluminação"
+  },
+  {
+    "id": 115,
+    "name": "Iluminação Comercial",
+    "url": "https://www.casasdaagua.com.br/iluminacao/iluminacao-comercial",
+    "hasChildren": false,
+    "parent": "Iluminação"
+  },
+  {
+    "id": 154,
+    "name": "Fitas de LED",
+    "url": "https://www.casasdaagua.com.br/iluminacao/fitas-de-led",
+    "hasChildren": false,
+    "parent": "Iluminação"
+  },
+  {
+    "id": 38,
+    "name": "Materiais para Construção",
+    "url": "https://www.casasdaagua.com.br/materiais-para-construcao",
+    "hasChildren": true,
+    "parent": ""
+  },
+  {
+    "id": 39,
+    "name": "Aço para Construção",
+    "url": "https://www.casasdaagua.com.br/materiais-para-construcao/aco-para-construcao",
+    "hasChildren": false,
+    "parent": "Materiais para Construção"
+  },
+  {
+    "id": 46,
+    "name": "Argamassas e Rejuntes",
+    "url": "https://www.casasdaagua.com.br/materiais-para-construcao/argamassas-e-rejuntes",
+    "hasChildren": false,
+    "parent": "Materiais para Construção"
+  },
+  {
+    "id": 57,
+    "name": "Portas e Janelas",
+    "url": "https://www.casasdaagua.com.br/materiais-para-construcao/portas-e-janelas",
+    "hasChildren": false,
+    "parent": "Materiais para Construção"
+  },
+  {
+    "id": 60,
+    "name": "Caixas e Reservatórios de Água",
+    "url": "https://www.casasdaagua.com.br/materiais-para-construcao/caixas-e-reservatorios-de-agua",
+    "hasChildren": false,
+    "parent": "Materiais para Construção"
+  },
+  {
+    "id": 62,
+    "name": "Carrinho de Mão e Acessórios",
+    "url": "https://www.casasdaagua.com.br/materiais-para-construcao/carrinho-de-mao-e-acessorios",
+    "hasChildren": false,
+    "parent": "Materiais para Construção"
+  },
+  {
+    "id": 76,
+    "name": "Cimento, Cal e Gesso",
+    "url": "https://www.casasdaagua.com.br/materiais-para-construcao/cimento-cal-e-gesso",
+    "hasChildren": false,
+    "parent": "Materiais para Construção"
+  },
+  {
+    "id": 78,
+    "name": "Telhas",
+    "url": "https://www.casasdaagua.com.br/materiais-para-construcao/telhas",
+    "hasChildren": false,
+    "parent": "Materiais para Construção"
+  },
+  {
+    "id": 80,
+    "name": "Impermeabilizantes e Vedantes",
+    "url": "https://www.casasdaagua.com.br/materiais-para-construcao/impermeabilizantes-e-vedantes",
+    "hasChildren": false,
+    "parent": "Materiais para Construção"
+  },
+  {
+    "id": 91,
+    "name": "Chapas de Alumínio",
+    "url": "https://www.casasdaagua.com.br/materiais-para-construcao/chapas-de-aluminio",
+    "hasChildren": false,
+    "parent": "Materiais para Construção"
+  },
+  {
+    "id": 95,
+    "name": "Aditivos e Adesivos",
+    "url": "https://www.casasdaagua.com.br/materiais-para-construcao/aditivos-e-adesivos",
+    "hasChildren": false,
+    "parent": "Materiais para Construção"
+  },
+  {
+    "id": 121,
+    "name": "Proteção de Obra",
+    "url": "https://www.casasdaagua.com.br/materiais-para-construcao/protecao-de-obra",
+    "hasChildren": false,
+    "parent": "Materiais para Construção"
+  },
+  {
+    "id": 132,
+    "name": "Areias e Brita em Saco",
+    "url": "https://www.casasdaagua.com.br/materiais-para-construcao/areias-e-brita-em-saco",
+    "hasChildren": false,
+    "parent": "Materiais para Construção"
+  },
+  {
+    "id": 135,
+    "name": "Equipamentos de Segurança",
+    "url": "https://www.casasdaagua.com.br/materiais-para-construcao/equipamentos-de-seguranca",
+    "hasChildren": false,
+    "parent": "Materiais para Construção"
+  },
+  {
+    "id": 136,
+    "name": "Colas, Silicones e Lubrificantes",
+    "url": "https://www.casasdaagua.com.br/materiais-para-construcao/colas-silicones-e-lubrificantes",
+    "hasChildren": false,
+    "parent": "Materiais para Construção"
+  },
+  {
+    "id": 140,
+    "name": "Réguas de Requadro e Alumínio",
+    "url": "https://www.casasdaagua.com.br/materiais-para-construcao/reguas-de-requadro-e-aluminio",
+    "hasChildren": false,
+    "parent": "Materiais para Construção"
+  },
+  {
+    "id": 149,
+    "name": "Bloco Celular",
+    "url": "https://www.casasdaagua.com.br/materiais-para-construcao/bloco-celular",
+    "hasChildren": false,
+    "parent": "Materiais para Construção"
+  },
+  {
+    "id": 151,
+    "name": "Tijolos de Vidro e Refratário",
+    "url": "https://www.casasdaagua.com.br/materiais-para-construcao/tijolos-de-vidro-e-refratario",
+    "hasChildren": false,
+    "parent": "Materiais para Construção"
+  },
+  {
+    "id": 152,
+    "name": "Forro PVC",
+    "url": "https://www.casasdaagua.com.br/materiais-para-construcao/forro-pvc",
+    "hasChildren": false,
+    "parent": "Materiais para Construção"
+  },
+  {
+    "id": 49,
+    "name": "Ferramentas",
+    "url": "https://www.casasdaagua.com.br/ferramentas",
+    "hasChildren": true,
+    "parent": ""
+  },
+  {
+    "id": 50,
+    "name": "Discos Abrasivos e de Corte",
+    "url": "https://www.casasdaagua.com.br/ferramentas/discos-abrasivos-e-de-corte",
+    "hasChildren": false,
+    "parent": "Ferramentas"
+  },
+  {
+    "id": 52,
+    "name": "Acessórios para Ferramentas Elétricas",
+    "url": "https://www.casasdaagua.com.br/ferramentas/acessorios-para-ferramentas-eletricas",
+    "hasChildren": false,
+    "parent": "Ferramentas"
+  },
+  {
+    "id": 54,
+    "name": "Ferramentas Manuais",
+    "url": "https://www.casasdaagua.com.br/ferramentas/ferramentas-manuais",
+    "hasChildren": false,
+    "parent": "Ferramentas"
+  },
+  {
+    "id": 58,
+    "name": "Ferramentas Elétricas e a Bateria",
+    "url": "https://www.casasdaagua.com.br/ferramentas/ferramentas-eletricas-e-a-bateria",
+    "hasChildren": false,
+    "parent": "Ferramentas"
+  },
+  {
+    "id": 64,
+    "name": "Ferramentas para Medição",
+    "url": "https://www.casasdaagua.com.br/ferramentas/ferramentas-para-medicao",
+    "hasChildren": false,
+    "parent": "Ferramentas"
+  },
+  {
+    "id": 155,
+    "name": "Discos de Borracha e de Polimento",
+    "url": "https://www.casasdaagua.com.br/ferramentas/discos-de-borracha-e-de-polimento",
+    "hasChildren": false,
+    "parent": "Ferramentas"
+  },
+  {
+    "id": 55,
+    "name": "Ferragens",
+    "url": "https://www.casasdaagua.com.br/ferragens",
+    "hasChildren": true,
+    "parent": ""
+  },
+  {
+    "id": 56,
+    "name": "Fixadores e Puxadores",
+    "url": "https://www.casasdaagua.com.br/ferragens/fixadores-e-puxadores",
+    "hasChildren": false,
+    "parent": "Ferragens"
+  },
+  {
+    "id": 59,
+    "name": "Ferragens para Fixar e Montar",
+    "url": "https://www.casasdaagua.com.br/ferragens/ferragens-para-fixar-e-montar",
+    "hasChildren": false,
+    "parent": "Ferragens"
+  },
+  {
+    "id": 77,
+    "name": "Materiais para Instalações a Gás",
+    "url": "https://www.casasdaagua.com.br/ferragens/materiais-para-instalacoes-a-gas",
+    "hasChildren": false,
+    "parent": "Ferragens"
+  },
+  {
+    "id": 102,
+    "name": "Suportes",
+    "url": "https://www.casasdaagua.com.br/ferragens/suportes",
+    "hasChildren": false,
+    "parent": "Ferragens"
+  },
+  {
+    "id": 103,
+    "name": "Suportes",
+    "url": "https://www.casasdaagua.com.br/ferragens/suportes",
+    "hasChildren": false,
+    "parent": "Ferragens"
+  },
+  {
+    "id": 111,
+    "name": "Segurança e Proteção",
+    "url": "https://www.casasdaagua.com.br/ferragens/seguranca-e-protecao",
+    "hasChildren": false,
+    "parent": "Ferragens"
+  },
+  {
+    "id": 114,
+    "name": "Segurança e Proteção",
+    "url": "https://www.casasdaagua.com.br/ferragens/seguranca-e-protecao",
+    "hasChildren": false,
+    "parent": "Ferragens"
+  },
+  {
+    "id": 138,
+    "name": "Fechaduras e Acessórios",
+    "url": "https://www.casasdaagua.com.br/ferragens/fechaduras-e-acessorios",
+    "hasChildren": false,
+    "parent": "Ferragens"
+  },
+  {
+    "id": 139,
+    "name": "Ferragens para Portas",
+    "url": "https://www.casasdaagua.com.br/ferragens/ferragens-para-portas",
+    "hasChildren": false,
+    "parent": "Ferragens"
+  },
+  {
+    "id": 141,
+    "name": "Caixas de Correspondências",
+    "url": "https://www.casasdaagua.com.br/ferragens/caixas-de-correspondencias",
+    "hasChildren": false,
+    "parent": "Ferragens"
+  },
+  {
+    "id": 143,
+    "name": "Cabos, Cordas e Correntes",
+    "url": "https://www.casasdaagua.com.br/ferragens/cabos-cordas-e-correntes",
+    "hasChildren": false,
+    "parent": "Ferragens"
+  },
+  {
+    "id": 146,
+    "name": "Ferragens para Janelas",
+    "url": "https://www.casasdaagua.com.br/ferragens/ferragens-para-janelas",
+    "hasChildren": false,
+    "parent": "Ferragens"
+  },
+  {
+    "id": 153,
+    "name": "Sinalização",
+    "url": "https://www.casasdaagua.com.br/ferragens/sinalizacao",
+    "hasChildren": false,
+    "parent": "Ferragens"
+  },
+  {
+    "id": 68,
+    "name": "Climatização e Ventilação",
+    "url": "https://www.casasdaagua.com.br/climatizacao-e-ventilacao",
+    "hasChildren": true,
+    "parent": ""
+  },
+  {
+    "id": 69,
+    "name": "Aquecedores de Ambiente",
+    "url": "https://www.casasdaagua.com.br/climatizacao-e-ventilacao/aquecedores-de-ambiente",
+    "hasChildren": false,
+    "parent": "Climatização e Ventilação"
+  },
+  {
+    "id": 70,
+    "name": "Ar Condicionado",
+    "url": "https://www.casasdaagua.com.br/climatizacao-e-ventilacao/ar-condicionado",
+    "hasChildren": false,
+    "parent": "Climatização e Ventilação"
+  },
+  {
+    "id": 72,
+    "name": "Exaustores",
+    "url": "https://www.casasdaagua.com.br/climatizacao-e-ventilacao/exaustores",
+    "hasChildren": false,
+    "parent": "Climatização e Ventilação"
+  },
+  {
+    "id": 73,
+    "name": "Ventiladores",
+    "url": "https://www.casasdaagua.com.br/climatizacao-e-ventilacao/ventiladores",
+    "hasChildren": false,
+    "parent": "Climatização e Ventilação"
+  },
+  {
+    "id": 147,
+    "name": "Conexões e Tubos para Exaustão",
+    "url": "https://www.casasdaagua.com.br/climatizacao-e-ventilacao/conexoes-e-tubos-para-exaustao",
+    "hasChildren": false,
+    "parent": "Climatização e Ventilação"
+  },
+  {
+    "id": 148,
+    "name": "Grades de Ventilação",
+    "url": "https://www.casasdaagua.com.br/climatizacao-e-ventilacao/grades-de-ventilacao",
+    "hasChildren": false,
+    "parent": "Climatização e Ventilação"
+  },
+  {
+    "id": 81,
+    "name": "Casa e Jardim",
+    "url": "https://www.casasdaagua.com.br/casa-e-jardim",
+    "hasChildren": true,
+    "parent": ""
+  },
+  {
+    "id": 82,
+    "name": "Churrasqueiras e Acessórios",
+    "url": "https://www.casasdaagua.com.br/casa-e-jardim/churrasqueiras-e-acessorios",
+    "hasChildren": false,
+    "parent": "Casa e Jardim"
+  },
+  {
+    "id": 98,
+    "name": "Torneiras para Jardim",
+    "url": "https://www.casasdaagua.com.br/casa-e-jardim/torneiras-para-jardim",
+    "hasChildren": false,
+    "parent": "Casa e Jardim"
+  },
+  {
+    "id": 105,
+    "name": "Caixas e Garrafões Térmicos",
+    "url": "https://www.casasdaagua.com.br/casa-e-jardim/caixas-e-garrafoes-termicos",
+    "hasChildren": false,
+    "parent": "Casa e Jardim"
+  },
+  {
+    "id": 106,
+    "name": "Cadeiras, Gazebos e Guarda-sóis",
+    "url": "https://www.casasdaagua.com.br/casa-e-jardim/cadeiras-gazebos-e-guarda-sois",
+    "hasChildren": false,
+    "parent": "Casa e Jardim"
+  },
+  {
+    "id": 107,
+    "name": "Caixas e Garrafões Térmicos",
+    "url": "https://www.casasdaagua.com.br/casa-e-jardim/caixas-e-garrafoes-termicos",
+    "hasChildren": false,
+    "parent": "Casa e Jardim"
+  },
+  {
+    "id": 108,
+    "name": "Artigos para Piscinas",
+    "url": "https://www.casasdaagua.com.br/casa-e-jardim/artigos-para-piscinas",
+    "hasChildren": false,
+    "parent": "Casa e Jardim"
+  },
+  {
+    "id": 109,
+    "name": "Lavadoras de Alta Pressão",
+    "url": "https://www.casasdaagua.com.br/casa-e-jardim/lavadoras-de-alta-pressao",
+    "hasChildren": false,
+    "parent": "Casa e Jardim"
+  },
+  {
+    "id": 110,
+    "name": "Lavadoras de Alta Pressão",
+    "url": "https://www.casasdaagua.com.br/casa-e-jardim/lavadoras-de-alta-pressao",
+    "hasChildren": false,
+    "parent": "Casa e Jardim"
+  },
+  {
+    "id": 122,
+    "name": "Mangueiras e Irrigação",
+    "url": "https://www.casasdaagua.com.br/casa-e-jardim/mangueiras-e-irrigacao",
+    "hasChildren": false,
+    "parent": "Casa e Jardim"
+  },
+  {
+    "id": 124,
+    "name": "Máquinas e Aparadores de Grama",
+    "url": "https://www.casasdaagua.com.br/casa-e-jardim/maquinas-e-aparadores-de-grama",
+    "hasChildren": false,
+    "parent": "Casa e Jardim"
+  },
+  {
+    "id": 129,
+    "name": "Móveis Plásticos",
+    "url": "https://www.casasdaagua.com.br/casa-e-jardim/moveis-plasticos",
+    "hasChildren": false,
+    "parent": "Casa e Jardim"
+  },
+  {
+    "id": 142,
+    "name": "Ferramentas para Jardinagem",
+    "url": "https://www.casasdaagua.com.br/casa-e-jardim/ferramentas-para-jardinagem",
+    "hasChildren": false,
+    "parent": "Casa e Jardim"
+  },
+  {
+    "id": 144,
+    "name": "Tapetes e Capachos",
+    "url": "https://www.casasdaagua.com.br/casa-e-jardim/tapetes-e-capachos",
+    "hasChildren": false,
+    "parent": "Casa e Jardim"
+  },
+  {
+    "id": 84,
+    "name": "Tintas e Acessórios para Pintura",
+    "url": "https://www.casasdaagua.com.br/tintas-e-acessorios-para-pintura",
+    "hasChildren": true,
+    "parent": ""
+  },
+  {
+    "id": 85,
+    "name": "Tintas para Alvenaria",
+    "url": "https://www.casasdaagua.com.br/tintas-e-acessorios-para-pintura/tintas-para-alvenaria",
+    "hasChildren": false,
+    "parent": "Tintas e Acessórios para Pintura"
+  },
+  {
+    "id": 86,
+    "name": "Complemento para Pintura",
+    "url": "https://www.casasdaagua.com.br/tintas-e-acessorios-para-pintura/complemento-para-pintura",
+    "hasChildren": false,
+    "parent": "Tintas e Acessórios para Pintura"
+  },
+  {
+    "id": 87,
+    "name": "Preparação e Proteção de Superfície para Pintura",
+    "url": "https://www.casasdaagua.com.br/tintas-e-acessorios-para-pintura/preparacao-e-protecao-de-superficie-para-pintura",
+    "hasChildren": false,
+    "parent": "Tintas e Acessórios para Pintura"
+  },
+  {
+    "id": 88,
+    "name": "Verniz",
+    "url": "https://www.casasdaagua.com.br/tintas-e-acessorios-para-pintura/verniz",
+    "hasChildren": false,
+    "parent": "Tintas e Acessórios para Pintura"
+  },
+  {
+    "id": 89,
+    "name": "Tintas para Madeira e Ferro",
+    "url": "https://www.casasdaagua.com.br/tintas-e-acessorios-para-pintura/tintas-para-madeira-e-ferro",
+    "hasChildren": false,
+    "parent": "Tintas e Acessórios para Pintura"
+  },
+  {
+    "id": 93,
+    "name": "Ferramentas para Pintura",
+    "url": "https://www.casasdaagua.com.br/tintas-e-acessorios-para-pintura/ferramentas-para-pintura",
+    "hasChildren": false,
+    "parent": "Tintas e Acessórios para Pintura"
+  },
+  {
+    "id": 94,
+    "name": "Rolos, Pincéis e Trinchas",
+    "url": "https://www.casasdaagua.com.br/tintas-e-acessorios-para-pintura/rolos-pinceis-e-trinchas",
+    "hasChildren": false,
+    "parent": "Tintas e Acessórios para Pintura"
+  },
+  {
+    "id": 137,
+    "name": "Tintas Spray",
+    "url": "https://www.casasdaagua.com.br/tintas-e-acessorios-para-pintura/tintas-spray",
+    "hasChildren": false,
+    "parent": "Tintas e Acessórios para Pintura"
+  }
+]

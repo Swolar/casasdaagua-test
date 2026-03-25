@@ -1,0 +1,857 @@
+/* ============================================
+   Admin Panel — Keyframe Animations
+   ============================================ */
+
+@keyframes adminFadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes adminFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes adminSlideInLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes adminSlideInRight {
+  from { opacity: 0; transform: translateX(30px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes adminScaleIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes adminPulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.05); }
+}
+
+@keyframes adminShimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes adminSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes adminBounceIn {
+  0%   { opacity: 0; transform: scale(0.3); }
+  50%  { opacity: 1; transform: scale(1.05); }
+  70%  { transform: scale(0.95); }
+  100% { transform: scale(1); }
+}
+
+@keyframes adminCountUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes adminGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(8, 98, 173, 0); }
+  50%      { box-shadow: 0 0 20px 4px rgba(8, 98, 173, 0.15); }
+}
+
+@keyframes adminRipple {
+  0%   { transform: scale(0); opacity: 0.5; }
+  100% { transform: scale(4); opacity: 0; }
+}
+
+/* ============================================
+   Admin Panel — Layout
+   ============================================ */
+
+.admin {
+  @apply flex;
+  min-height: 100vh;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+/* Sidebar */
+.admin__sidebar {
+  @apply fixed left-0 top-0 z-40 flex flex-col;
+  width: 260px;
+  height: 100vh;
+  background-color: #002A47;
+  overflow-y: auto;
+  animation: adminSlideInLeft 0.4s ease-out;
+}
+
+.admin__sidebar-header {
+  @apply flex items-center;
+  padding: 24px 20px;
+  animation: adminFadeIn 0.6s ease-out 0.2s both;
+}
+
+.admin__sidebar-logo {
+  @apply font-bold text-white;
+  font-size: 20px;
+}
+
+.admin__sidebar-nav {
+  @apply flex flex-col;
+  padding: 0 12px;
+  gap: 4px;
+}
+
+.admin__sidebar-link {
+  @apply flex items-center font-medium;
+  gap: 12px;
+  padding: 12px 20px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  border-radius: 8px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.admin__sidebar-link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) scaleY(0);
+  width: 3px;
+  height: 60%;
+  background-color: #fff;
+  border-radius: 0 2px 2px 0;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.admin__sidebar-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transform: translateX(4px);
+}
+
+.admin__sidebar-link:hover::before {
+  transform: translateY(-50%) scaleY(1);
+}
+
+.admin__sidebar-link--active {
+  background-color: #0862AD;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(8, 98, 173, 0.3);
+}
+
+.admin__sidebar-link--active::before {
+  transform: translateY(-50%) scaleY(1);
+  background-color: #FFD41D;
+}
+
+.admin__sidebar-link:active {
+  transform: translateX(4px) scale(0.97);
+}
+
+.admin__sidebar-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.admin__sidebar-link:hover .admin__sidebar-icon {
+  transform: scale(1.15);
+}
+
+/* Main area */
+.admin__main {
+  @apply flex-1 flex flex-col;
+  margin-left: 260px;
+  background-color: #F2F6F8;
+  min-height: 100vh;
+  animation: adminFadeIn 0.5s ease-out;
+}
+
+/* Topbar */
+.admin__topbar {
+  @apply sticky top-0 flex items-center justify-between;
+  z-index: 30;
+  background-color: #fff;
+  border-bottom: 1px solid #E3EBED;
+  padding: 16px 24px;
+  animation: adminFadeIn 0.4s ease-out;
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.admin__topbar-title {
+  @apply font-bold;
+  font-size: 24px;
+  color: #002A47;
+  animation: adminFadeInUp 0.5s ease-out;
+}
+
+.admin__topbar-actions {
+  @apply flex items-center;
+  gap: 12px;
+}
+
+/* Content */
+.admin__content {
+  @apply mx-auto w-full;
+  padding: 24px;
+  max-width: 1400px;
+  animation: adminFadeInUp 0.5s ease-out;
+}
+
+/* Mobile toggle */
+.admin__mobile-toggle {
+  @apply items-center justify-center;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #E3EBED;
+  background: #fff;
+  color: #002A47;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.admin__mobile-toggle:hover {
+  background-color: #F2F6F8;
+  transform: scale(1.05);
+}
+
+.admin__mobile-toggle:active {
+  transform: scale(0.95);
+}
+
+/* ============================================
+   Stats Cards
+   ============================================ */
+
+.admin__stats {
+  @apply grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media (min-width: 1024px) {
+  .admin__stats {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.admin__stat-card {
+  @apply flex items-center;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #E3EBED;
+  gap: 16px;
+  animation: adminFadeInUp 0.5s ease-out both;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: default;
+}
+
+.admin__stat-card:nth-child(1) { animation-delay: 0.05s; }
+.admin__stat-card:nth-child(2) { animation-delay: 0.1s; }
+.admin__stat-card:nth-child(3) { animation-delay: 0.15s; }
+.admin__stat-card:nth-child(4) { animation-delay: 0.2s; }
+.admin__stat-card:nth-child(5) { animation-delay: 0.25s; }
+.admin__stat-card:nth-child(6) { animation-delay: 0.3s; }
+.admin__stat-card:nth-child(7) { animation-delay: 0.35s; }
+.admin__stat-card:nth-child(8) { animation-delay: 0.4s; }
+
+.admin__stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 42, 71, 0.1);
+  border-color: #0862AD;
+}
+
+.admin__stat-value {
+  @apply font-bold;
+  font-size: 28px;
+  color: #002A47;
+  line-height: 1.2;
+  animation: adminCountUp 0.6s ease-out both;
+}
+
+.admin__stat-label {
+  font-size: 14px;
+  color: #979899;
+  margin-top: 2px;
+}
+
+.admin__stat-icon {
+  @apply flex items-center justify-center flex-shrink-0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.admin__stat-card:hover .admin__stat-icon {
+  transform: scale(1.15) rotate(5deg);
+}
+
+.admin__stat-icon--blue {
+  background-color: rgba(8, 98, 173, 0.1);
+  color: #0862AD;
+}
+
+.admin__stat-icon--green {
+  background-color: rgba(0, 135, 90, 0.1);
+  color: #00875A;
+}
+
+.admin__stat-icon--red {
+  background-color: rgba(247, 25, 99, 0.1);
+  color: #F71963;
+}
+
+.admin__stat-icon--yellow {
+  background-color: rgba(255, 212, 29, 0.15);
+  color: #b8960e;
+}
+
+/* ============================================
+   Tables
+   ============================================ */
+
+.admin__table-wrap {
+  background-color: #fff;
+  border-radius: 12px;
+  border: 1px solid #E3EBED;
+  overflow: hidden;
+  animation: adminFadeInUp 0.5s ease-out 0.15s both;
+  transition: box-shadow 0.3s ease;
+}
+
+.admin__table-wrap:hover {
+  box-shadow: 0 4px 16px rgba(0, 42, 71, 0.06);
+}
+
+.admin__table-header {
+  @apply flex items-center justify-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid #E3EBED;
+}
+
+.admin__table-title {
+  @apply font-bold;
+  font-size: 16px;
+  color: #002A47;
+}
+
+.admin__table {
+  @apply w-full;
+  border-collapse: collapse;
+}
+
+.admin__table th {
+  @apply text-left text-xs uppercase font-semibold;
+  color: #979899;
+  padding: 12px 20px;
+  background-color: #F2F6F8;
+  letter-spacing: 0.05em;
+}
+
+.admin__table td {
+  @apply text-sm;
+  padding: 14px 20px;
+  color: #002A47;
+  border-top: 1px solid #E3EBED;
+  transition: all 0.2s ease;
+}
+
+.admin__table tbody tr {
+  transition: all 0.2s ease;
+}
+
+.admin__table tbody tr:hover {
+  background-color: rgba(8, 98, 173, 0.03);
+}
+
+.admin__table tbody tr:hover td {
+  background-color: transparent;
+}
+
+.admin__table tbody tr:active {
+  background-color: rgba(8, 98, 173, 0.06);
+}
+
+/* ============================================
+   Badges
+   ============================================ */
+
+.admin__badge {
+  @apply inline-flex items-center font-bold;
+  border-radius: 9999px;
+  padding: 4px 12px;
+  font-size: 12px;
+  line-height: 1.4;
+  transition: all 0.3s ease;
+  animation: adminScaleIn 0.3s ease-out;
+}
+
+.admin__badge:hover {
+  transform: scale(1.08);
+}
+
+.admin__badge--pending {
+  background-color: #FFF3CD;
+  color: #856404;
+}
+
+.admin__badge--paid {
+  background-color: #D4EDDA;
+  color: #155724;
+}
+
+.admin__badge--shipped {
+  background-color: #CCE5FF;
+  color: #004085;
+}
+
+.admin__badge--delivered {
+  background-color: #D4EDDA;
+  color: #155724;
+}
+
+.admin__badge--cancelled {
+  background-color: #F8D7DA;
+  color: #721C24;
+}
+
+/* ============================================
+   Buttons
+   ============================================ */
+
+.admin__btn {
+  @apply inline-flex items-center justify-center font-semibold;
+  gap: 8px;
+  font-size: 14px;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.admin__btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease, height 0.4s ease;
+}
+
+.admin__btn:active::after {
+  width: 300px;
+  height: 300px;
+}
+
+.admin__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.admin__btn:active {
+  transform: translateY(0) scale(0.97);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin__btn--primary {
+  background-color: #0862AD;
+  color: #fff;
+  border: 1px solid #0862AD;
+}
+
+.admin__btn--primary:hover {
+  background-color: #0f3e99;
+  box-shadow: 0 4px 16px rgba(8, 98, 173, 0.35);
+}
+
+.admin__btn--success {
+  background-color: #00875A;
+  color: #fff;
+}
+
+.admin__btn--success:hover {
+  background-color: #006a47;
+  box-shadow: 0 4px 16px rgba(0, 135, 90, 0.35);
+}
+
+.admin__btn--danger {
+  background-color: #F71963;
+  color: #fff;
+}
+
+.admin__btn--danger:hover {
+  background-color: #d41455;
+  box-shadow: 0 4px 16px rgba(247, 25, 99, 0.35);
+}
+
+.admin__btn--outline {
+  background-color: #fff;
+  border: 1px solid #E3EBED;
+  color: #002A47;
+}
+
+.admin__btn--outline:hover {
+  background-color: #F2F6F8;
+  border-color: #0862AD;
+  color: #0862AD;
+  box-shadow: 0 4px 12px rgba(8, 98, 173, 0.1);
+}
+
+.admin__btn--sm {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+.admin__btn--sm:hover {
+  transform: translateY(-1px);
+}
+
+.admin__sidebar--open {
+  display: flex !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 90;
+  animation: adminSlideInLeft 0.3s ease-out;
+}
+
+/* ============================================
+   Detail Page
+   ============================================ */
+
+.admin__detail-grid {
+  @apply grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 1024px) {
+  .admin__detail-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.admin__detail-card {
+  background-color: #fff;
+  border-radius: 12px;
+  border: 1px solid #E3EBED;
+  padding: 20px;
+  animation: adminFadeInUp 0.4s ease-out both;
+  transition: all 0.3s ease;
+}
+
+.admin__detail-card:nth-child(1) { animation-delay: 0.05s; }
+.admin__detail-card:nth-child(2) { animation-delay: 0.1s; }
+.admin__detail-card:nth-child(3) { animation-delay: 0.15s; }
+.admin__detail-card:nth-child(4) { animation-delay: 0.2s; }
+.admin__detail-card:nth-child(5) { animation-delay: 0.25s; }
+.admin__detail-card:nth-child(6) { animation-delay: 0.3s; }
+
+.admin__detail-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 42, 71, 0.08);
+  transform: translateY(-2px);
+}
+
+.admin__detail-title {
+  @apply font-bold;
+  font-size: 16px;
+  color: #002A47;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #E3EBED;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.admin__detail-row {
+  @apply flex items-center justify-between;
+  padding: 8px 0;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  border-radius: 6px;
+  margin: 0 -8px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.admin__detail-row:hover {
+  background-color: #F2F6F8;
+}
+
+.admin__detail-label {
+  color: #979899;
+}
+
+.admin__detail-value {
+  @apply font-medium;
+  color: #002A47;
+}
+
+/* ============================================
+   Filters
+   ============================================ */
+
+.admin__filters {
+  @apply flex flex-wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+  animation: adminFadeIn 0.4s ease-out;
+}
+
+.admin__filter-btn {
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  border: 1px solid #E3EBED;
+  background-color: #fff;
+  color: #002A47;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.admin__filter-btn:hover {
+  background-color: #F2F6F8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 42, 71, 0.08);
+}
+
+.admin__filter-btn:active {
+  transform: translateY(0) scale(0.96);
+}
+
+.admin__filter-btn--active {
+  background-color: #0862AD;
+  color: #fff;
+  border-color: #0862AD;
+  box-shadow: 0 2px 8px rgba(8, 98, 173, 0.3);
+  animation: adminScaleIn 0.2s ease-out;
+}
+
+/* ============================================
+   Empty State
+   ============================================ */
+
+.admin__empty {
+  @apply text-center;
+  padding: 48px 20px;
+  color: #979899;
+  font-size: 14px;
+  animation: adminFadeIn 0.5s ease-out;
+}
+
+/* ============================================
+   Search Input
+   ============================================ */
+
+.admin__search-input {
+  transition: all 0.3s ease;
+  border: 1px solid #E3EBED;
+  border-radius: 8px;
+}
+
+.admin__search-input:focus {
+  border-color: #0862AD;
+  box-shadow: 0 0 0 3px rgba(8, 98, 173, 0.15);
+  outline: none;
+}
+
+/* ============================================
+   Loading Spinner
+   ============================================ */
+
+.admin__spinner {
+  animation: adminSpin 0.8s linear infinite;
+}
+
+.admin__loading {
+  animation: adminPulse 1.5s ease-in-out infinite;
+}
+
+/* ============================================
+   Copy Button Feedback
+   ============================================ */
+
+.admin__copy-btn {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.admin__copy-btn:hover {
+  color: #0862AD;
+  transform: scale(1.2);
+}
+
+.admin__copy-btn:active {
+  transform: scale(0.9);
+}
+
+/* ============================================
+   Sidebar Badge (count)
+   ============================================ */
+
+.admin__sidebar-badge {
+  transition: all 0.3s ease;
+  animation: adminScaleIn 0.3s ease-out;
+}
+
+.admin__sidebar-link:hover .admin__sidebar-badge {
+  transform: scale(1.1);
+}
+
+/* ============================================
+   Quick Actions (Dashboard)
+   ============================================ */
+
+.admin__quick-action {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.admin__quick-action:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 42, 71, 0.12);
+}
+
+.admin__quick-action:active {
+  transform: translateY(0) scale(0.97);
+}
+
+/* ============================================
+   Tab Content Transitions
+   ============================================ */
+
+.admin__tab-content {
+  animation: adminFadeInUp 0.4s ease-out;
+}
+
+/* ============================================
+   Refresh Button Spin
+   ============================================ */
+
+.admin__btn--refresh:hover svg,
+.admin__btn--refresh:hover .lucide {
+  animation: adminSpin 0.6s ease-in-out;
+}
+
+/* ============================================
+   Export Button Glow
+   ============================================ */
+
+.admin__btn--export:hover {
+  animation: adminGlow 1.5s ease-in-out infinite;
+}
+
+/* ============================================
+   Tooltip
+   ============================================ */
+
+.admin__tooltip {
+  position: relative;
+}
+
+.admin__tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  padding: 4px 10px;
+  background-color: #002A47;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.admin__tooltip:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-4px);
+}
+
+/* ============================================
+   Responsive — Mobile (<1024px)
+   ============================================ */
+
+@media (max-width: 1023px) {
+  .admin__sidebar {
+    @apply hidden;
+  }
+
+  .admin__main {
+    margin-left: 0;
+  }
+
+  .admin__mobile-toggle {
+    @apply flex;
+  }
+
+  .admin__topbar-title {
+    font-size: 18px;
+  }
+
+  .admin__content {
+    padding: 16px;
+  }
+
+  /* Reduce animation intensity on mobile */
+  .admin__stat-card:hover,
+  .admin__detail-card:hover {
+    transform: translateY(-2px);
+  }
+
+  .admin__btn:hover {
+    transform: translateY(-1px);
+  }
+}
+
+/* ============================================
+   Reduced Motion (Accessibility)
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .admin__stat-card,
+  .admin__detail-card,
+  .admin__table-wrap,
+  .admin__sidebar,
+  .admin__content,
+  .admin__topbar-title,
+  .admin__badge,
+  .admin__filters,
+  .admin__empty,
+  .admin__sidebar-header {
+    animation: none !important;
+  }
+
+  .admin__btn,
+  .admin__filter-btn,
+  .admin__sidebar-link,
+  .admin__stat-card,
+  .admin__detail-card,
+  .admin__detail-row,
+  .admin__table tbody tr {
+    transition-duration: 0.01ms !important;
+  }
+}

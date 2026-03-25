@@ -1,0 +1,70 @@
+.catgrid {
+  @apply bg-white;
+  padding: 28px 0;
+}
+
+.catgrid__container {
+  @apply mx-auto px-4;
+  max-width: 1292px;
+}
+
+.catgrid__title {
+  @apply font-bold text-center;
+  font-size: 20px;
+  color: #002A47;
+  margin-bottom: 32px;
+}
+
+.catgrid__row {
+  @apply flex justify-center flex-wrap;
+  gap: 16px;
+}
+@media (min-width: 1024px) {
+  .catgrid__row {
+    gap: 24px;
+  }
+}
+
+.catgrid__row--first {
+  margin-bottom: 32px;
+}
+
+.catgrid__link {
+  @apply flex flex-col items-center gap-3;
+  width: 90px;
+}
+@media (min-width: 1024px) {
+  .catgrid__link {
+    width: 130px;
+  }
+}
+
+.catgrid__img-wrap {
+  @apply relative;
+  width: 70px;
+  height: 70px;
+  transition: transform 0.3s;
+}
+@media (min-width: 1024px) {
+  .catgrid__img-wrap {
+    width: 100px;
+    height: 100px;
+  }
+}
+.catgrid__link:hover .catgrid__img-wrap {
+  transform: scale(1.1);
+}
+
+.catgrid__label {
+  @apply font-semibold text-center leading-tight transition-colors;
+  font-size: 12px;
+  color: #002A47;
+}
+@media (min-width: 1024px) {
+  .catgrid__label {
+    font-size: 14px;
+  }
+}
+.catgrid__link:hover .catgrid__label {
+  color: #0862AD;
+}
