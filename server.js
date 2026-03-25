@@ -1,21 +1,18 @@
-const { execSync } = require("child_process");
-const path = require("path");
+const { createServer } = require("http");
+const { parse } = require("url");
+const next = require("next");
 
-process.chdir(__dirname);
-process.env.NODE_ENV = "production";
-process.env.PORT = process.env.PORT || 3000;
+const app = next({ dir: __dirname, dev: false });
+const handle = app.getRequestHandler();
 
-require("next/dist/server/lib/start-server")
-  .startServer({
-    dir: __dirname,
-    port: parseInt(process.env.PORT),
-    hostname: "0.0.0.0",
-    isDev: false,
-  })
-  .then(() => {
-    console.log(`> Ready on port ${process.env.PORT}`);
-  })
-  .catch((err) => {
-    console.error(err);
-    process.exit(1);
+app.prepare().then(() => {
+  const server = createServer((req, res) => {
+    const parsedUrl = parse(req.url, true);
+    handle(req, res, parsedUrl);
   });
+
+  const port = process.env.PORT || 3000;
+  server.listen(port, "0.0.0.0", () => {
+    console.log(`> Ready on port ${port}`);
+  });
+});

@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { v4 as uuidv4 } from "uuid";
 import { getDb } from "@/lib/db";
-import { verifyAdminToken } from "@/lib/auth";
+
 
 export async function POST(req: NextRequest) {
   try {
@@ -56,11 +56,7 @@ export async function POST(req: NextRequest) {
   }
 }
 
-export async function GET(req: NextRequest) {
-  const token = req.cookies.get("admin_token")?.value || req.headers.get("authorization")?.replace("Bearer ", "") || "";
-  if (!verifyAdminToken(token)) {
-    return NextResponse.json({ error: "Não autorizado" }, { status: 401 });
-  }
+export async function GET() {
 
   try {
     const db = getDb();

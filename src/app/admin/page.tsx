@@ -123,8 +123,8 @@ function exportToCSV(filename: string, headers: string[], rows: string[][]) {
 }
 
 export default function AdminPage() {
-  const [loggedIn, setLoggedIn] = useState(false);
-  const [checking, setChecking] = useState(true);
+  const [loggedIn, setLoggedIn] = useState(true);
+  const [checking, setChecking] = useState(false);
   const [password, setPassword] = useState("");
   const [loginError, setLoginError] = useState("");
   const [loginLoading, setLoginLoading] = useState(false);
@@ -148,16 +148,8 @@ export default function AdminPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [deleteConfirm, setDeleteConfirm] = useState<string | null>(null);
 
-  // Check auth on mount
-  useEffect(() => {
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 5000);
-    fetch("/api/admin/auth/verify", { signal: controller.signal })
-      .then((r) => r.json())
-      .then((d) => { if (d.authenticated) setLoggedIn(true); })
-      .catch(() => {})
-      .finally(() => { clearTimeout(timeout); setChecking(false); });
-  }, []);
+  // Skip auth check — direct access
+  useEffect(() => {}, []);
 
   const fetchStats = useCallback(async () => {
     try {

@@ -48,3 +48,5 @@ ENV_PARA_COLAR_NO_HOSTING.txt
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.vercel
