@@ -1,12 +1,21 @@
 import Database from "better-sqlite3";
 import path from "path";
+import fs from "fs";
 
 let db: Database.Database | null = null;
 
 export function getDb(): Database.Database {
   if (db) return db;
 
-  const dbPath = path.join(process.cwd(), "data", "casasdagua.db");
+  // Vercel uses /tmp for writable storage
+  const isVercel = !!process.env.VERCEL;
+  const dbDir = isVercel ? "/tmp" : path.join(process.cwd(), "data");
+  const dbPath = path.join(dbDir, "casasdagua.db");
+
+  if (!fs.existsSync(dbDir)) {
+    fs.mkdirSync(dbDir, { recursive: true });
+  }
+
   db = new Database(dbPath);
   db.pragma("journal_mode = WAL");
   db.pragma("foreign_keys = ON");
