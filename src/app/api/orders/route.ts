@@ -116,6 +116,13 @@ export async function POST(req: NextRequest) {
     });
   } catch (error) {
     console.error("Error creating order:", error);
+    const msg = error instanceof Error ? error.message : "";
+    if (msg.includes("invalid cpf")) {
+      return NextResponse.json({ error: "CPF inválido. Verifique e tente novamente." }, { status: 400 });
+    }
+    if (msg.includes("PagouAi error")) {
+      return NextResponse.json({ error: "Erro ao gerar pagamento PIX. Verifique seus dados." }, { status: 400 });
+    }
     return NextResponse.json({ error: "Erro ao criar pedido" }, { status: 500 });
   }
 }

@@ -151,6 +151,23 @@ export default function CheckoutPage() {
     setCepValid(false);
   };
 
+  // Validate CPF (algorithm)
+  const isValidCpf = (raw: string): boolean => {
+    const digits = raw.replace(/\D/g, "");
+    if (digits.length !== 11) return false;
+    if (/^(\d)\1{10}$/.test(digits)) return false;
+    let sum = 0;
+    for (let i = 0; i < 9; i++) sum += parseInt(digits[i]) * (10 - i);
+    let rest = (sum * 10) % 11;
+    if (rest === 10) rest = 0;
+    if (rest !== parseInt(digits[9])) return false;
+    sum = 0;
+    for (let i = 0; i < 10; i++) sum += parseInt(digits[i]) * (11 - i);
+    rest = (sum * 10) % 11;
+    if (rest === 10) rest = 0;
+    return rest === parseInt(digits[10]);
+  };
+
   // Format CPF
   const handleCpfChange = (val: string) => {
     const clean = val.replace(/\D/g, "");
@@ -203,6 +220,7 @@ export default function CheckoutPage() {
     if (!firstName.trim()) return "Preencha seu nome.";
     if (!lastName.trim()) return "Preencha seu sobrenome.";
     if (!cpf || cpf.replace(/\D/g, "").length < 11) return "Preencha um CPF válido (11 dígitos).";
+    if (!isValidCpf(cpf)) return "CPF inválido. Verifique os dígitos e tente novamente.";
     if (!phone || phone.replace(/\D/g, "").length < 10) return "Preencha um telefone válido.";
     return null;
   };
@@ -267,6 +285,12 @@ export default function CheckoutPage() {
       });
 
       const data = await res.json();
+
+      if (!res.ok || data.error) {
+        alert(data.error || "Erro ao criar pedido. Verifique seus dados e tente novamente.");
+        return null;
+      }
+
       setOrderId(data.orderId);
 
       if (method === "pix" && data.pixCode) {
@@ -278,6 +302,7 @@ export default function CheckoutPage() {
       return data;
     } catch (error) {
       console.error("Error creating order:", error);
+      alert("Erro ao processar pedido. Tente novamente.");
       return null;
     } finally {
       setLoading(false);
@@ -303,10 +328,9 @@ export default function CheckoutPage() {
       setShowCardRejection(true);
     } else if (paymentMethod === "pix") {
       setShowProcessing(true);
-      try {
-        await createOrder("pix");
-      } catch { /* ignore */ }
+      const result = await createOrder("pix");
       setShowProcessing(false);
+      if (!result) return;
     }
   };
 
